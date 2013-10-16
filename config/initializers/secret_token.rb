@@ -9,6 +9,7 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
+
 require 'securerandom'
 
 def secure_token
@@ -24,4 +25,4 @@ def secure_token
   end
 end
 
-SampleApp::Application.config.secret_key_base = secure_token
+SparkprojectsOne::Application.config.secret_key_base = '65333ceaffa182d08ce5f8ee66822309c7cadb3821904fc57df21fafdb5847ec386d7a0cb0ae5f2a84d204db3b639e49fc1572ec33fcf56a2ee214b5a56c343e'
